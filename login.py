@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 from sqlalchemy import text
 
@@ -61,7 +62,7 @@ def app():
                 session.commit()
 
             st.success(f"Logged in as {name}")
-
+            time.sleep(3)
             # Redirect to stock trend page
             st.switch_page('pages/app.py')
 

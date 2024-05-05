@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 from sqlalchemy import text
 
 from utils import *
@@ -73,4 +74,5 @@ if st.button("Submit"):
             session.execute(query)
             session.commit()
         st.success("Password Changed Successfully")
+        time.sleep(3)
         st.switch_page('index.py')
