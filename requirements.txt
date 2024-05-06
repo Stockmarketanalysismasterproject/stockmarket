@@ -9,7 +9,9 @@ password-strength==0.0.3.post2
 requests==2.31.0
 scikit-learn==1.4.1.post1
 scipy==1.13.0
-psycopg2-binary
+plotly==5.20.0
+psycopg2==2.9.9
+psycopg2-binary==2.9.9
 python-decouple==3.8
 smmap==5.0.1
 secure-smtplib==0.1.1

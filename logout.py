@@ -1,6 +1,6 @@
 import streamlit as st
 from sqlalchemy import text
-
+import time
 
 from utils import *
 
@@ -25,5 +25,6 @@ def app():
         session.commit()
 
     st.success("Loged Out Successfully")
+    time.sleep(3)
     st.switch_page('index.py')
 
